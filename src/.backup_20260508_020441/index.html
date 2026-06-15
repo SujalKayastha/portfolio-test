@@ -1,0 +1,233 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sujal Kayastha | Portfolio</title>
+    <meta name="description" content="Cybersecurity professional portfolio showcasing skills, projects, certifications, and blog posts.">
+    
+    <!-- FAVICON: Replace with your own in assets/ -->
+    <link rel="icon" href="assets/favicon.ico" type="image/x-icon">
+    
+    <!-- Fonts: Terminal-style + Modern Sans -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;700&family=Inter:wght@300;400;600;700&display=swap" rel="stylesheet">
+    
+    <link rel="stylesheet" href="css/style.css">
+    <!-- Ensures CSS knows if JS is loaded -->
+    <script>document.documentElement.classList.add('js-loaded');</script>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <!-- NAVIGATION -->
+    <nav class="navbar">
+        <div class="logo">&gt; portfolio<span class="cursor">_</span></div>
+        <button class="menu-toggle" aria-label="Toggle menu">☰</button>
+        <ul class="nav-links">
+            <li><a href="#home">Home</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#skills">Skills</a></li>
+            <li><a href="#certifications">Certifications</a></li>
+            <li><a href="#projects">Projects</a></li>
+            <li><a href="#blog">Blog</a></li>
+            <li><a href="#contact">Contact</a></li>
+            <li><button id="theme-toggle" aria-label="Toggle theme">🌓</button></li>
+        </ul>
+    </nav>
+
+    <main>
+        <!-- HOME / HERO -->
+        <section id="home" class="hero">
+            <div class="hero-content animate-on-scroll">
+                <p class="terminal-prompt">&gt; initializing...</p>
+                <h1>Hi, I'm <span class="highlight">Sujal Kayastha</span></h1>
+                <h2 class="typewriter">Cybersecurity Undergraduate </h2>
+                <div class="cta-buttons">
+                    <a href="#projects" class="btn btn-primary">view projects</a>
+                    <a href="cv/cv.pdf" class="btn btn-secondary" download>download cv</a>
+                </div>
+            </div>
+        </section>
+
+        <!-- ABOUT -->
+        <section id="about" class="section">
+            <div class="container">
+                <h2 class="section-title animate-on-scroll">&gt; about</h2>
+                <div class="about-grid animate-on-scroll">
+                    <div class="about-text">
+                        <!-- EDIT: Replace with your bio -->
+                        <p>Passionate cybersecurity student with expertise in linux, cybersecurity tools, and network architecture. I am still learning where my goal is identifying weaknesses before malicious actors do.</p>
+                        <p>My approach combines offensive security methodologies with defensive best practices to build resilient systems.</p>
+                        <div class="stats">
+                            <div class="stat"><span class="number">2</span><span class="label">Years Ongoing UnderGrad</span></div>
+                            <div class="stat"><span class="number">20+</span><span class="label">TryHackMe Rooms Completed</span></div>
+                            <div class="stat"><span class="number">100%</span><span class="label">Commitment</span></div>
+                        </div>
+                    </div>
+                    <!-- EDIT: Replace src with your photo -->
+                    <div class="about-image">
+                    <img src="assets/about.jpg" alt="About me photo" width="393" height="235">
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- SKILLS -->
+        <section id="skills" class="section bg-alt">
+            <div class="container">
+                <h2 class="section-title animate-on-scroll">&gt; skills</h2>
+                <div class="skills-grid">
+                    <!-- EDIT: Add/remove skill categories and items -->
+                    <div class="skill-card animate-on-scroll">
+                        <h3>Offensive Security</h3>
+                        <ul>
+                            <li>Penetration Testing</li>
+                            <li>Burp Suite</li>
+                            <li>Network Scanning (Nmap)</li>
+                            <li>Exploit Development</li>
+                        </ul>
+                    </div>
+                    <div class="skill-card animate-on-scroll">
+                        <h3>Defensive Security</h3>
+                        <ul>
+                            <li>SIEM (Wazuh))</li>
+                            <li>Incident Response</li>
+                            <li>Threat Hunting & Malware Analysis (VirusTotal)</li>
+                            <li>Endpoint Detection</li>
+                        </ul>
+                    </div>
+                    <div class="skill-card animate-on-scroll">
+                        <h3>Digtial Forensics</h3>
+                        <ul>
+                            <li>Autopsy</li>
+                            <li>WireShark/ Network Miner</li>
+                            <li>FTK Imager</li>
+                            <li>Binwalk/ Exiftool</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- CERTIFICATIONS & ACHIEVEMENTS -->
+        <section id="certifications" class="section">
+            <div class="container">
+                <h2 class="section-title animate-on-scroll">&gt; certifications & achievements</h2>
+                <div class="certs-grid">
+                    <!-- EDIT: Replace with your certs -->
+                    <div class="cert-card animate-on-scroll">
+                        <span class="cert-badge">CCEP</span>
+                        <h3>Certified Cybersecurity Educator Professional</h3>
+                        <p>By: Red Team Leaders | 2025-Present</p>
+                    </div>
+                    <div class="cert-card animate-on-scroll">
+                        <span class="cert-badge">CTF</span>
+                        <h3>Capture The FLag</h3>
+                        <p>By: Softwarica College | 2024</p>
+                    </div>
+                    <div class="cert-card animate-on-scroll">
+                        <span class="cert-badge">HTB, TryHackMe, PortSwigger, PicoCTF</span>
+                        <h3>Seasonsal Challenges & Lessons Taken</h3>
+                        <p>Actively Participated and Completed</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- GITHUB PROJECTS -->
+        <section id="projects" class="section bg-alt">
+            <div class="container">
+                <h2 class="section-title animate-on-scroll">&gt; github projects</h2>
+                <div class="projects-grid">
+                    <!-- EDIT: Replace with your GitHub projects -->
+                    <a href="https://github.com/SujalKayastha/Network-Mapper-Python" target="_blank" class="project-card animate-on-scroll">
+                        <h3>🌐 Network Mapper</h3>
+                        <p>Automated network scanner for exposed services and hosts.</p>
+                        <span class="tech-tags">Python • GUI Interface </span>
+                    </a>
+                    <a href="https://github.com/SujalKayastha/Cipher-Pass-Manager-Pro" target="_blank" class="project-card animate-on-scroll">
+                        <h3>🔒 Cipher Pass Manager Pro</h3>
+                        <p>Secure password manager which saves passwords in an Cipher encrypted value for extra layer of security.</p>
+                        <span class="tech-tags">C language • GUI Interface</span>
+                    </a>
+                    <a href="https://github.com/SujalKayastha/Steganography-Tool-GUI" target="_blank" class="project-card animate-on-scroll"> 
+                        <h3>🔎 Steganography Tool</h3>
+                        <p>Securely hides and extracts messages within image files using LSB encoding.</p>
+                        <span class="tech-tags">Python • GUI Interface </span>
+
+                    </a>
+                    <a href="https://github.com/SujalKayastha/Vulnerability-Scanner-GUI"
+                    target="_blank"
+                    class="project-card animate-on-scroll project-card--center">
+                        <h3>🛡️ Vulnerability Scanner</h3>
+                        <p>Vulnerability scanner for detecting Reflected XSS, SQL Injection, Command Injection, and Directory Traversal vulnerabilities.</p>
+                        <span class="tech-tags">Python • GUI Interface</span>
+                    </a>
+                </div>
+            </div>
+        </section>
+
+        <!-- BLOG / MEDIUM -->
+        <section id="blog" class="section">
+            <div class="container">
+                <h2 class="section-title animate-on-scroll">&gt; blog posts</h2>
+                <div class="blog-grid">
+                    <!-- EDIT: Replace with your Medium article links -->
+                    <a href="https://medium.com/@sujalkayastha20/why-ai-powered-phishing-is-becoming-the-biggest-cybersecurity-threat-in-2026-1c405f93f316?source=friends_link&sk=066c619f28b89e7d3f2a10c5d58dc5dd" target="_blank" class="blog-card animate-on-scroll">
+                    <img src="assets/phishing.jpg" alt="Phishing article thumbnail"  width="936" height="533">
+                        <span class="date">May 2026</span>
+                        <h3>Why AI-Powered Phishing Is Becoming the Biggest Cybersecurity Threat in 2026?</h3>
+                        <p>Analysis of recent AI-Powered Phishing.</p>
+                    </a>
+                    <a href="https://medium.com/@sujalkayastha20/digital-nepal-real-cyber-risks-why-online-scams-are-exploding-in-nepal-21513e565d72" target="_blank" class="blog-card animate-on-scroll">
+                    <img src="assets/DigitalNepal.jpg" alt="Phishing article thumbnail"  width="998" height="625">
+                        <span class="date">May 2026</span>
+                        <h3>Digital Nepal, Real Cyber Risks: Why Online Scams Are Exploding in Nepal</h3>
+                        <p>Analysis of cybersecurity realed risks to Digital Nepal.</p>
+                    </a>
+                    <a href="https://medium.com/@sujalkayastha20/the-password-is-dying-and-most-people-havent-realized-it-yet-7684ecb46392" target="_blank" class="blog-card animate-on-scroll">
+                        <img src="assets/password.jpg" alt="Phishing article thumbnail"  width="998" height="442">
+                        <span class="date">May 2026</span>
+                        <h3>The Password Is Dying - And Most People Haven't Realized It Yet</h3>
+                        <p>A deep Analysis to passwords and passkeys.</p>
+                    </a>
+                </div>
+            </div>
+        </section>
+
+        <!-- CONTACT -->
+        <section id="contact" class="section bg-alt">
+            <div class="container">
+                <h2 class="section-title animate-on-scroll">&gt; get in touch</h2>
+                <div class="contact-grid animate-on-scroll">
+                    <div class="contact-info">
+                        <!-- EDIT: Replace with your actual links -->
+                        <a href="mailto:sujalkayastha20@gmail.com" class="contact-item">
+                            <span class="icon">✉️</span> sujalkayastha20@gmail.com
+                        </a>
+                        <a href="https://github.com/SujalKayastha" target="_blank" class="contact-item">
+                            <span class="icon">🐙</span> github.com/SujalKayastha
+                        </a>
+                        <a href="https://www.linkedin.com/in/sujalkayastha/" target="_blank" class="contact-item">
+                            <span class="icon">💼</span> linkedin.com/in/sujalkayastha
+                        </a>
+                    </div>
+                    <form class="contact-form" action="https://formspree.io/f/mkoyvbwb" method="POST">
+                        <input type="text" name="name" placeholder="Name" required>
+                        <input type="email" name="email" placeholder="Email" required>
+                        <textarea name="message" placeholder="Message..." required></textarea>
+                        <button type="submit" class="btn btn-primary">send message</button>
+                    </form>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; <span id="year"></span> Sujal Kayastha. Built with security in mind.</p>
+    </footer>
+
+    <script src="js/script.js"></script>
+</body>
+</html>

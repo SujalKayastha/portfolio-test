@@ -1,0 +1,3 @@
+docker compose up -d
+
+docker exec sujal-portfolio touch /usr/share/nginx/html/hacked.txt
