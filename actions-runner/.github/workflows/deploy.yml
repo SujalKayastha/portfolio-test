@@ -1,0 +1,30 @@
+name: Deploy to VM
+
+on:
+  push:
+    branches:
+      - main
+
+jobs:
+  deploy:
+    runs-on: self-hosted
+
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v4
+
+      - name: Deploy using Docker Compose
+        run: |
+          set -e
+
+          cd ~/Semester5/PracticalCryptography/Portfolio
+
+          echo "Pulling latest code..."
+          git fetch origin main
+          git reset --hard origin/main
+
+          echo "Building containers..."
+          docker compose up -d --build
+
+          echo "Cleaning unused images..."
+          docker image prune -f
